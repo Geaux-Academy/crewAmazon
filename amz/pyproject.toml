@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "amz"
+version = "0.1.0"
+description = "amz using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = "^0.51.0" }
+pdfminer-six = "^20240706"
+aiohttp = "^3.10.3"
+asyncio = "^3.4.3"
+tqdm = "^4.66.5"
+pdfminer = "^20191125"
+pymupdf = "^1.24.9"
+
+[tool.poetry.scripts]
+amz = "amz.main:run"
+run_crew = "amz.main:run"
+train = "amz.main:train"
+replay = "amz.main:replay"
+test = "amz.main:test"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

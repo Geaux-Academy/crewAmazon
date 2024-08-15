@@ -1,0 +1,19 @@
+research_pdfs_task:
+  description: >
+    Search the web for PDFs related to Python coding and scripts.
+    Focus on finding documents that are educational and cover
+    various aspects of Python programming.
+    Your final answer MUST be a list of URLs to the PDFs.
+  expected_output: >
+    A list of URLs to PDFs related to Python coding and scripts.
+  agent: researcher
+
+organize_pdfs_task:
+  description: >
+    Organize the collected PDFs based on their content.
+    Summarize each PDF and categorize them into relevant topics.
+    Your final output MUST include a summary of each PDF and
+    a categorized list of topics.
+  expected_output: >
+    Summarized content and categorized list of topics from the PDFs.
+  agent: organizer
